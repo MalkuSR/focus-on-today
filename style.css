@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F9ED;
+    font-family: Poppins;
+}
+
+main {
+    padding: 0px 16px 32px;
+}
+
+.title {
+    font-size: 64px;
+    color: #48A300;
+    text-align: center;
+}
+
+.title span {
+    color: #61481C;
+}
+
+.container {
+    background-color: #fbfbfb;
+    max-width: 660px;
+    margin-inline: auto;
+    border-radius: 15px;
+    padding: 32px 42px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sub-title {
+    font-size: 32px;
+}
+
+.sub-title img {
+    vertical-align: middle;
+    margin-left: 16px;
+}
+
+.bar {
+    color: #858585;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    height: 30px;
+    background-color: #48A3001A;
+    border-radius: 15px;
+    margin-bottom: 60px;
+}
+
+.progress-value {
+    height: 30px;
+    width: 0%;
+    height: 100%;
+    background-color: #48A300;
+    border-radius: 15px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: #EEFFE0;
+    font-weight: 500;
+    transition: width 0.2s ease;
+}
+
+.error {
+    color: #FF5151;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    margin-top: 4px;
+    display: none;
+}
+
+.completed .error {
+    display: block;
+}
+
+.goal-container {
+    border: 1px solid #0000001A;
+    border-radius: 17px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    background-color: white;
+    margin-bottom: 42px;
+}
+
+.custom-checkbox {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #61481C4D;
+    border-radius: 50%;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-icon {
+    display: none;
+}
+
+.completed .custom-checkbox {
+    background-color: #48A300;
+    border-color: #48A300;
+}
+
+.completed .check-icon {
+    display: block;
+}
+
+.goal-input {
+    padding-left: 16px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    width: 100%;
+    align-self: stretch;
+}
+
+.completed .goal-input {
+    color: #48A300;
+    text-decoration-line: line-through;
+}
+
+.goal-input::placeholder {
+    color: #D9D9D9;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.clrBtn {
+    padding: 10px;
+    background-color: #48A300;
+    border: 1px solid #48A300;
+    color: rgb(235, 235, 235);
+    border-radius: 18px;
+    position: relative;
+    left: 45%;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.quote {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.made-with {
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+    color: #858585;
+}
+
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .container {
+        padding: 16px 32px;
+    }
+
+    .goal-container {
+        height: 64px;
+        margin-bottom: 24px;
+        border-radius: 14px;
+    }
+
+    .custom-checkbox {
+        width: 20px;
+        height: 20px;
+    }
+
+    .quote {
+        margin-bottom: 32px;
+    }
+
+    .progress-bar {
+        height: 24px;
+    }
+}
